@@ -30,8 +30,8 @@ int main() {
     // The essence of this assignment is in these four lines; while there is data in "read",
     // print this data in "write" with the gradeCheck function to convert number to letter grades
     while (inFile >> name >> num) {
-        cout << name << "'s letter grade is " << gradeCheck(num) << "\n";
-        outFile << name << " " << gradeCheck(num) << "\n";
+        cout << name << "'s grade of " << num << " is " << gradeCheck(num) << "\n";
+        outFile << name << " " << num << " " << gradeCheck(num) << "\n";
     }
     cout << "\nAbove data written into output file.\n\n";
     system("pause");
